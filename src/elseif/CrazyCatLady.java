@@ -20,12 +20,13 @@ if(catsNumber > 3) {
 }
 		// 4. If they have 3 or less, call the method below to show them a cat video
 if(catsNumber < 4) {
-	
+	playVideo("https://www.youtube.com/watch?v=N7hu-3IiCN8");
 }
 		// 5. If they say 0, show them a video of A Frog Sitting on a Bench Like a Human
-		
+if(catsNumber == 0) {	
+	playVideo("https://www.youtube.com/watch?v=ZJT9CeEhM10");
+}
 	}
-
 	static void playVideo(String videoURL) {
 		try {
 			URI uri = new URI(videoURL);
