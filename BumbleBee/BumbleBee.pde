@@ -22,6 +22,7 @@ b += 10;
 fill(#030303);
 ellipse(a, b, 50, 50);
 }
+drawBeeFace(440, 440);
 }
 }
 void drawFlower(int x, int y) {
