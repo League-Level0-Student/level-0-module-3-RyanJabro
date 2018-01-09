@@ -3,8 +3,8 @@ size(800, 800);
 }
 int xTwo = 550;
 int x = 250; 
-int speed = 1;
-int speedTwo = -1;
+int speed = 2;
+int speedTwo = -2;
 void draw() {
 background(#FFFFFF);
 int w = 250;
@@ -25,7 +25,8 @@ int hTwo = 250;
 if(x > 749) {
     speed = -speed;
 }
-if(x < 50) {
+if(x < 49) {
+    speed = -speed;
 }
  for(int i = 0; i < 17; i++) {
    noFill();
@@ -38,6 +39,9 @@ if(x < 50) {
    xTwo = xTwo + speedTwo;
 
 if(xTwo < 49) {
+    speedTwo = -speedTwo;
+}
+if(xTwo > 749) {
     speedTwo = -speedTwo;
 }
 }
